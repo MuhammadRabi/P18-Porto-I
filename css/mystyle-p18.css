@@ -181,9 +181,6 @@ section .content {
 }
 
 
-.box-section .box-content h4 {}
-
-.box-section .box-content p {}
 
 .box-section .box-content a {
     transition: 0.5s
@@ -220,9 +217,6 @@ section .content {
     text-align: center;
     line-height: 15px;
 }
-
-.cinema {}
-
 
 .item-box {
     height: 350px;
@@ -281,6 +275,27 @@ section .content {
 }
 
 
+/* start testimonial slider section */
+.testimonial .carousel-indicators li {
+    background-color: #ccc
+}
+
+
+
+.testimonial .carousel-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px
+}
+
+@media (max-width:768px) {
+    .testimonial .carousel-item h5 {
+        width: 50% !important
+    }
+}
+
+/* end testimonial slider section */
+
 /* price plans section */
 
 .card-img-top {
@@ -294,28 +309,6 @@ section .content {
     font-weight: 500;
     letter-spacing: 2px
 }
-
-/* start testimonial slider section */
-.testimonial .carousel-indicators li {
-    background-color: red
-}
-
-
-
-.testimonial .carousel-item img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px
-}
-
-
-/*.testimonial {
-    background: url('IMG_20190613_225624.jpg') center;
-    background-size: cover
-}
-*/
-
-/* end testimonial slider section */
 
 /* start experience avatar section */
 
