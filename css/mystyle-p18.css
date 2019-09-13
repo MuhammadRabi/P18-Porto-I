@@ -321,7 +321,8 @@ section .content {
 
 .experience-avatar .avatar-tab li {
     display: inline-block;
-    cursor: pointer
+    cursor: pointer;
+
 }
 
 
@@ -330,12 +331,14 @@ section .content {
     height: 75px;
     border-radius: 50%;
     opacity: 0.5;
-    transition: 0.5s
+    transition: 0.5s;
+
 }
 
 .experience-avatar .avatar-tab li.selected img {
     opacity: 1;
-    border: 2px solid #ccc
+    border: 2px solid #ccc;
+
 }
 
 
@@ -362,15 +365,13 @@ section .content {
     background: #333
 }
 
-li.selected {
+.tabs li.selected {
     background: #17a2b8
 }
 
 /* end dynamic tabs */
 
 /* start footer */
-
-footer {}
 
 .social-footer {
     justify-content: space-between;
