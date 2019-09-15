@@ -352,10 +352,25 @@ section .content {
     display: none
 }
 
+/*@media (max-width:768px) {
+    .tab-content h3 {
+        text-align: center
+    }
+}
+*/
+
+
 .tabs li {
     cursor: pointer;
     transition: 1s;
     background: #333
+}
+
+@media (max-width:768px){
+    .tabs li{
+        width:75%;
+        margin:auto
+    }
 }
 
 .tabs li.selected {
