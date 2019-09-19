@@ -393,3 +393,9 @@ section .content {
 footer i{
     font-size:22px
 }
+
+
+
+.camino {
+    border:1px solid #000
+}
