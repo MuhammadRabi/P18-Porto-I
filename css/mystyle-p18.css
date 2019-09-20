@@ -363,7 +363,8 @@ section .content {
 .tabs li {
     cursor: pointer;
     transition: 1s;
-    background: #333
+    background: #333;
+    border-radius: 5px
 }
 
 @media (max-width:768px){
@@ -395,7 +396,19 @@ footer i{
 }
 
 
-
+/* caminso section */
 .camino {
-    border:1px solid #000
+    border:1px solid #6c757d;
+    transition:0.5s ease-in-out
+}
+
+.camino i{
+    font-size:48px;
+    margin-bottom:15px;
+    color:#17a2b8
+}
+
+.camino:hover{
+    box-shadow:2px 2px 10px 2px #6c757d
+    
 }
