@@ -405,3 +405,29 @@ footer i{
 .camino button{
     text-align: left !important
 }
+
+.photon .img-content .h3{
+    margin-right:150px
+}
+
+.slide-img-two,
+.slide-img-three,
+.slide-img-four{
+    display: none;
+
+    
+}
+
+
+.slide-img-btn li{
+    cursor: pointer;
+    transition:0.5s ease-in-out
+}
+
+.slide-img-btn li.marked{
+    color:black;
+    background:#eee
+}
+
+.slide-img{
+}
