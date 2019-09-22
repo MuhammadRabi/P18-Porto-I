@@ -358,6 +358,95 @@
         </div>
     </div>
     <!-- Dynamic Tabs trial 001 -->
+    <div class="photon bg-light py-5">
+        <div class="container">
+            <ul class="slide-img-btn list-unstyled text-center">
+                <li data-class="slide-img-one" class="marked btn btn-dark">slide-img-one</li>
+                <li data-class="slide-img-two" class="btn btn-dark">slide-img-two</li>
+                <li data-class="slide-img-three" class="btn btn-dark">slide-img-three</li>
+                <li data-class="slide-img-four" class="btn btn-dark">slide-img-four</li>
+            </ul>
+            <!-- slide one -->
+            <div class="slide-img">
+                <div class="slide-img-one bg-white my-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img">
+                                <img src="img/4k-wallpaper-adventure-beach-2896890.jpg" class="img-fluid"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-content text-center text-md-left py-5">
+                                <div class="h1 text-secondary mb-3">01</div>
+                                <div class="h3 mb-3">Get More From Life With Creativity.
+                                </div>
+                                <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet vel facere incidunt qui, quas architecto quisquam undem cum.
+                                </p>
+                                <button class="btn btn-info mt-3">go now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide two -->
+                <div class="slide-img-two bg-white my-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img">
+                                <img src="img/beautiful-desktop-wallpaper-frost-2088238.jpg" class="img-fluid"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-content py-5">
+                                <div class="h1 text-secondary mb-3">02</div>
+                                <div class="h3 mb-3">Get More From Life With Creativity.
+                                </div>
+                                <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet vel facere incidunt qui, quas architecto quisquam undem cum.
+                                </p>
+                                <button class="btn btn-info mt-3">go now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide three -->
+                <div class="slide-img-three bg-white my-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img">
+                                <img src="img/blur-close-up-device-442576.jpg" class="img-fluid"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-content py-5">
+                                <div class="h1 text-secondary mb-3">03</div>
+                                <div class="h3 mb-3">Get More From Life With Creativity.
+                                </div>
+                                <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet vel facere incidunt qui, quas architecto quisquam undem cum.
+                                </p>
+                                <button class="btn btn-info mt-3">go now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide four -->
+                <div class="slide-img-four bg-white my-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="img">
+                                <img src="img/traffic-a-lot-of-cars-driving-across-the-golden-gate-bridge-picjumbo-com.jpg" class="img-fluid"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="img-content py-5">
+                                <div class="h1 text-secondary mb-3">04</div>
+                                <div class="h3 mb-3">Get More From Life With Creativity.
+                                </div>
+                                <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet vel facere incidunt qui, quas architecto quisquam undem cum.
+                                </p>
+                                <button class="btn btn-info mt-3">go now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
     <footer class="bg-dark text-secondary">
         <div class="container">
             <div class="row">
@@ -400,10 +489,18 @@
                 $('.' + $(this).data('class')).show();
             });
 
+            $('.slide-img-btn li').on('click', function() {
+                $(this).addClass('marked').siblings().removeClass('marked');
+
+                $('.slide-img > div').hide();
+                $('.' + $(this).data('class')).show();
+
+
+            });
+
+
+
 
         });
-
     </script>
-</body>
-
-</html>
+</body></html>
