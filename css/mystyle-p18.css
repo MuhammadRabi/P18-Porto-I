@@ -8,7 +8,7 @@ section {
 
 
 * {
-    font-family: sans-serif;
+    font-family: 'exo 2', 'Bree Serif';
 }
 
 /* end global rules */
@@ -24,30 +24,14 @@ a {
 .short-heading:after {
     content: " ";
     display: block;
-    width: 15%;
+    width: 35%;
     height: 4px;
     background: #fff;
-    margin: 15px 0
+    margin: 15px auto
 }
 
 /* end framework */
 
-
-/* start responsive nav */
-
-header section {
-    font-family: sans-serif;
-
-}
-
-.overlay {
-    top: 0;
-    left: 0;
-    background: rgb(255, 255, 255, 0.5);
-    padding: 0 100px;
-    font-size: 15px;
-
-}
 
 /* header slider */
 
@@ -355,13 +339,6 @@ section .content {
     display: none
 }
 
-/*@media (max-width:768px) {
-    .tab-content h3 {
-        text-align: center
-    }
-}
-*/
-
 
 .tabs li {
     cursor: pointer;
@@ -401,16 +378,16 @@ section .content {
     }
 }
 
-@media(max-width:768px) {
-    .img-content p {
-        padding-right: 0 !important;
+@media (max-width:768px) {
+    .photon .img-content p {
+        padding: 1px 16px
     }
-
 }
 
 @media (min-width:768px) and (max-width:992px) {
     .img-content p {
-        font-size: 14px;
+        font-size: 12px;
+        margin:5px auto !important
     }
 
 }
